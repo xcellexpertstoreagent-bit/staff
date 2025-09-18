@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Merchant Support Gateway — Independent Partner</title>
+  <title>Shopify Merchant Support — Advisor Dashboard</title>
   
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -489,7 +489,7 @@
     .bot-main-button {
       width: 64px;
       height: 64px;
-      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      background: linear-gradient(135deg, #00A651 0%, #00A651 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -512,7 +512,7 @@
       right: -2px;
       width: 16px;
       height: 16px;
-      background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+      background: linear-gradient(135deg, #10B981 0%, #5b9e29 100%);
       border-radius: 50%;
       border: 2px solid white;
       animation: onlineIndicator 2s ease-in-out infinite;
@@ -811,7 +811,7 @@
       <i class="fa-solid fa-store"></i>
     </div>
     
-    <h1 class="loading-title">Merchant Gateway</h1>
+    <h1 class="loading-title">Connecting you with a Specialist . . . .</h1>
     <p id="loadingSubtitle" class="loading-subtitle">Preparing your premium workspace...</p>
     
     <div class="loading-spinner-container">
@@ -843,8 +843,8 @@
       <div class="flex items-center gap-4">
         <img id="logoTop" alt="Logo" class="w-10 h-10 rounded-full object-cover border-2 border-emerald-200 shadow-md" src="" />
         <div>
-          <div class="text-base font-bold text-gradient">Merchant Support Gateway</div>
-          <div class="text-xs text-gray-500 font-medium">Premium Partner Resource</div>
+          <div class="text-base font-bold text-gradient">Shopify Advisor</div>
+          <div class="text-xs text-gray-500 font-medium">Helping merchants grow safely & profitably</div>
         </div>
       </div>
       <div class="hidden md:flex items-center gap-3 text-sm text-gray-600">
@@ -1196,8 +1196,21 @@
           <p class="premium-text mb-3">Increase sales with data-driven CRO strategies.</p>
           <div class="text-gradient font-bold text-lg">Starting at $249</div>
         </button>
+        
+         <!-- Service 4 -->
+    <button onclick="openModal('Marketing automation & customer retention strategies', '$299')" 
+      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-check text-green-600 text-xs"></i>
+        </div>
+        <span class="text-gray-800 font-medium">Marketing automation & customer retention strategies</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-2">Engage customers and boost repeat sales with automation.</p>
+      <div class="text-green-700 font-semibold">Starting at $299</div>
+    </button>
 
-        <!-- Service 4 -->
+        <!-- Service 5 -->
         <button onclick="openModal('24/7 merchant support & emergency response', '$399')" 
           class="premium-btn block p-6 border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition bg-white text-left w-full premium-hover">
           <div class="flex items-center gap-4 mb-3">
@@ -1209,9 +1222,226 @@
           <p class="premium-text mb-3">Get round-the-clock support and emergency fixes.</p>
           <div class="text-gradient-gold font-bold text-lg">Starting at $399</div>
         </button>
+        
+         <!-- Service 6 -->
+    <button onclick="openModal('Security headers & GDPR compliance implementation', '$229')" 
+      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-check text-green-600 text-xs"></i>
+        </div>
+        <span class="text-gray-800 font-medium">Security headers & GDPR compliance implementation</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-2">Ensure compliance and security with modern best practices.</p>
+      <div class="text-green-700 font-semibold">Starting at $229</div>
+    </button>
+        
+        <!-- Service 7 -->
+    <button onclick="openModal('App integration & workflow optimization', '$199')" 
+      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-check text-green-600 text-xs"></i>
+        </div>
+        <span class="text-gray-800 font-medium">App integration & workflow optimization</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-2">Save time by integrating apps and automating tasks.</p>
+      <div class="text-green-700 font-semibold">Starting at $199</div>
+    </button>
+        
+        <!-- Service 8 -->
+    <button onclick="openModal('Shopify Plus migration & custom development', '$499')" 
+      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-check text-green-600 text-xs"></i>
+        </div>
+        <span class="text-gray-800 font-medium">Shopify Plus migration & custom development</span>
+      </div>
+      <p class="text-sm text-gray-600 mb-2">Seamlessly migrate or customize your Shopify Plus store.</p>
+      <div class="text-green-700 font-semibold">Starting at $499</div>
+    </button>
+        
       </div>
     </div>
   </section>
+
+<!-- Pro Fading Images with Captions -->
+  <div class="fade-images">
+    <div class="image-slide active">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid1.webp" alt="Billionaire Boys Club">
+      <div class="caption">Billionaire Boys Club</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid5.webp" alt="Gray Nicolls Cricket">
+      <div class="caption">Gray Nicolls Cricket</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid6.webp" alt="CleanCo">
+      <div class="caption">CleanCo</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid9.webp" alt="RNLI">
+      <div class="caption">RNLI</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid10.webp" alt="Sunnamusk">
+      <div class="caption">Sunnamusk</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid14.webp" alt="Case furniture">
+      <div class="caption">Case Furniture</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid2.webp" alt="Cambridge Satchel">
+      <div class="caption">Cambridge Satchel</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid4.webp" alt="Candy Kittens">
+      <div class="caption">Candy Kittens</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid7.webp" alt="Gilbert Rugby">
+      <div class="caption">Gilbert Rugby</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid8.webp" alt="Unndr">
+      <div class="caption">Unndr</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid13.webp" alt="Bio&Me">
+      <div class="caption">Bio&Me</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid11.webp" alt="Vollebak">
+      <div class="caption">Vollebak</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid3.webp" alt="111Skin">
+      <div class="caption">111Skin</div>
+    </div>
+    <div class="image-slide">
+      <img src="https://www.charleagency.com/assets/images/home/grid/grid12.webp" alt="Muc-Off">
+      <div class="caption">Muc-Off</div>
+    </div>
+  </div>
+</section>
+<style>
+/* Layout wrapper */
+.ticker-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Premium ticker bar */
+.ticker-wrapper {
+  overflow: hidden;
+  background: linear-gradient(90deg, #111, #333);
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 40px;
+  padding: 14px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.ticker {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 25s linear infinite;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Pro fading slideshow */
+.fade-images {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.image-slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out, transform 6s ease;
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.image-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.image-slide.active img {
+  transform: scale(1);
+}
+
+/* Captions */
+.caption {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 4;
+}
+
+.image-slide.active .caption {
+  opacity: 1;
+}
+
+/* Gradient overlay */
+.fade-images::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 20px;
+}
+</style>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".image-slide");
+
+function showNextImage() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+setInterval(showNextImage, 5000); // 5s per slide
+</script>
+ <!-- END grid -->
 
   <!-- Lead Magnet -->
   <section class="max-w-5xl mx-auto px-4 mb-12">
@@ -1302,8 +1532,7 @@
       </div>
     </div>
   </footer>
-photoUrl: ""
-    },
+
 <!-- Enhanced AI Support Bot -->
 <div id="aiSupportBot" class="ai-support-bot hidden">
   <!-- Bot Panel (Initially Hidden) -->
@@ -1353,10 +1582,9 @@ photoUrl: ""
   </div>
   
   <!-- Main Bot Button -->
-  <div id="botMainButton" class="bot-main-button">
-    <i class="fas fa-robot text-white text-2xl"></i>
-  </div>
-</div>
+<button id="botMainButton" class="bot-main-button">
+  <i class="fa-brands fa-whatsapp text-2xl"></i>
+</button>
 
 <!-- Support Form Modal -->
 <div id="supportModal" class="support-modal">
@@ -1694,7 +1922,7 @@ photoUrl: ""
     }
 
     const ticket = CONFIG.ticketId;
-    const message = `🤖 AI Support Bot - Priority Ticket
+    const message = `🟢 Priority Support Ticket Created
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Ticket ID: ${ticket}
 Channel: ${currentChannel?.toUpperCase()}
@@ -1705,7 +1933,7 @@ Category: ${issueCategory}
 Message: ${supportMessage}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Advisor: Juan Manuel (Verified)
-Status: PRIORITY CASE - AI Routed`;
+`;
 
     const encoded = encodeURIComponent(message);
 
