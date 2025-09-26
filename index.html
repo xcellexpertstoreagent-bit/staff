@@ -1690,6 +1690,11 @@ setInterval(showNextImage, 5000); // 5s per slide
       </p>
     </div>
 
+     <div>
+      <label class="text-xs text-gray-600 font-medium">Name *</label>
+      <input id="inputStore" class="w-full border border-gray-300 rounded-lg p-3 mb-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" placeholder="example.myshopify.com"/>
+      
+
     <div>
       <label class="text-xs text-gray-600 font-medium">Store URL *</label>
       <input id="inputStore" class="w-full border border-gray-300 rounded-lg p-3 mb-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" placeholder="example.myshopify.com"/>
@@ -1699,7 +1704,9 @@ setInterval(showNextImage, 5000); // 5s per slide
       
       <label class="text-xs text-gray-600 font-medium">Issue Category</label>
       <select id="inputIssue" class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+        <option>Seller Permit</option>
         <option>Compliance Warning</option>
+        <option>Fraud</option>
         <option>Checkout / Payment Issue</option>
         <option>Store Visibility (SEO)</option>
         <option>Growth & Marketing</option>
@@ -1910,7 +1917,8 @@ setInterval(showNextImage, 5000); // 5s per slide
   // Handle Support Form Submission
   function handleSupportSubmit(e) {
     e.preventDefault();
-    
+
+    const name = document.getElementById('name')?.value.trim() || '';
     const storeUrl = document.getElementById('storeUrl')?.value.trim() || '';
     const emailAddress = document.getElementById('emailAddress')?.value.trim() || '';
     const issueCategory = document.getElementById('issueCategory')?.value || '';
@@ -1926,6 +1934,7 @@ setInterval(showNextImage, 5000); // 5s per slide
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Ticket ID: ${ticket}
 Channel: ${currentChannel?.toUpperCase()}
+Name: ${Name}
 Store: ${storeUrl}
 Email: ${emailAddress}
 Category: ${issueCategory}
@@ -2073,6 +2082,7 @@ Advisor: Juan Manuel (Verified)
     const message = `🟢 Priority Support Ticket Created
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Ticket ID: ${ticket}
+Name: ${name}
 Store: ${store}
 Email: ${email}
 Issue: ${issue}
