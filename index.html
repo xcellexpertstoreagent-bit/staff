@@ -14,7 +14,7 @@
   <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
+  <style> 
     /* CSS Variables */
     :root{
       --primary: #4F46E5;
@@ -605,6 +605,20 @@
       color: #6B7280;
     }
 
+    
+    .premium-card {
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .premium-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+    }
+    
+    
     .support-options {
       display: flex;
       flex-direction: column;
@@ -783,7 +797,7 @@
 <script>
   const CONFIG = {
     logoUrl: "https://i.pinimg.com/736x/3a/9d/91/3a9d9115f2936dbd8979e34381da7973.jpg",
-    whatsappNumber: "2349135251130",
+    whatsappNumber: "2349032365125",
     telegramUsername: "t.me/Xcellexert",
     supportEmail: "xcellexpert.storeagent@gmail.com",
     
@@ -1443,6 +1457,54 @@ setInterval(showNextImage, 5000); // 5s per slide
 </script>
  <!-- END grid -->
 
+<!-- FAQ SECTION -->
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Frequently Asked Questions</h2>
+    
+    <div class="space-y-4">
+      <div class="premium-card p-6 cursor-pointer faq-item">
+        <div class="flex justify-between items-center">
+          <h4 class="font-semibold text-gray-900">How quickly can you resolve compliance issues?</h4>
+          <i class="fas fa-chevron-down text-gray-400 faq-icon transition-transform"></i>
+        </div>
+        <div class="faq-content hidden mt-4 text-gray-600 text-sm">
+          Most compliance issues are resolved within 24-48 hours. Priority cases receive immediate attention with same-day responses.
+        </div>
+      </div>
+
+      <div class="premium-card p-6 cursor-pointer faq-item">
+        <div class="flex justify-between items-center">
+          <h4 class="font-semibold text-gray-900">What's included in the free audit?</h4>
+          <i class="fas fa-chevron-down text-gray-400 faq-icon transition-transform"></i>
+        </div>
+        <div class="faq-content hidden mt-4 text-gray-600 text-sm">
+          Our free audit covers compliance review, security assessment, SEO analysis, and conversion opportunities. You'll receive a detailed report with prioritized recommendations.
+        </div>
+      </div>
+
+      <div class="premium-card p-6 cursor-pointer faq-item">
+        <div class="flex justify-between items-center">
+          <h4 class="font-semibold text-gray-900">Do you guarantee results?</h4>
+          <i class="fas fa-chevron-down text-gray-400 faq-icon transition-transform"></i>
+        </div>
+        <div class="faq-content hidden mt-4 text-gray-600 text-sm">
+          Yes! We offer a 100% money-back guarantee. If we can't deliver measurable improvements to your store, you don't pay. It's that simple.
+        </div>
+      </div>
+
+      <div class="premium-card p-6 cursor-pointer faq-item">
+        <div class="flex justify-between items-center">
+          <h4 class="font-semibold text-gray-900">Are you an official Shopify partner?</h4>
+          <i class="fas fa-chevron-down text-gray-400 faq-icon transition-transform"></i>
+        </div>
+        <div class="faq-content hidden mt-4 text-gray-600 text-sm">
+          We are independent verified partners working with Shopify merchants. We follow all platform guidelines and maintain direct relationships with certified developers.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Lead Magnet -->
   <section class="max-w-5xl mx-auto px-4 mb-12">
     <div class="premium-card rounded-3xl p-10 text-center premium-hover">
@@ -1504,6 +1566,25 @@ setInterval(showNextImage, 5000); // 5s per slide
           <li><a href="#" class="hover:text-white transition-colors">Custom Development</a></li>
         </ul>
       </div>
+      
+      <div>
+        <h4 class="text-white font-bold text-lg mb-6">Get In Touch</h4>
+        <div class="space-y-3 text-sm">
+          <a href="#" onclick="openLiveChat('whatsapp'); return false;" class="flex items-center gap-2 hover:text-white transition">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp Support
+          </a>
+          <a href="#" onclick="openLiveChat('telegram'); return false;" class="flex items-center gap-2 hover:text-white transition">
+            <i class="fab fa-telegram"></i>
+            Telegram Chat
+          </a>
+          <a href="#" onclick="openLiveChat('email'); return false;" class="flex items-center gap-2 hover:text-white transition">
+            <i class="fas fa-envelope"></i>
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
 
       <!-- Social Icons -->
       <div>
@@ -1595,7 +1676,7 @@ setInterval(showNextImage, 5000); // 5s per slide
           <i id="modalChannelIcon" class="text-white text-sm"></i>
         </div>
         <h3 id="modalTitle" class="text-lg font-semibold text-gray-800"></h3>
-      </div>
+      </div> 
       <button id="modalCloseBtn" class="text-gray-400 hover:text-gray-600 text-xl font-bold w-8 h-8 flex items-center justify-center">×</button>
     </div>
     
@@ -1647,7 +1728,7 @@ setInterval(showNextImage, 5000); // 5s per slide
         > 
           <option>Seller Permit</option>
           <option>Compliance Warning</option>
-          <option>Fraud</option>
+          <option>Fraud Pervention & Set Up</option>
           <option>Checkout / Payment Issue</option>
           <option>Store Visibility (SEO)</option>
           <option>Growth & Marketing</option>
@@ -1719,7 +1800,7 @@ setInterval(showNextImage, 5000); // 5s per slide
       <select id="inputIssue" class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
         <option>Seller Permit</option>
         <option>Compliance Warning</option>
-        <option>Fraud</option>
+        <option>Fraud Pervention & Set Up</option>
         <option>Checkout / Payment Issue</option>
         <option>Store Visibility (SEO)</option>
         <option>Growth & Marketing</option>
@@ -2028,7 +2109,7 @@ Advisor: Juan Manuel (Verified)
       currentPercent = Math.min(100, currentPercent + Math.floor(Math.random() * 12) + 3);
       if (counter) counter.textContent = currentPercent + '%';
       
-      if (currentPercent >= 100) {
+      if (currentPercent >= 95) {
         clearInterval(loadingInterval);
         clearInterval(messageInterval);
         if (subtitle) subtitle.textContent = "Launch complete!";
@@ -2046,11 +2127,11 @@ Advisor: Juan Manuel (Verified)
     }, 150);
 
     const messageInterval = setInterval(() => {
-      if (currentPercent < 100 && subtitle) {
+      if (currentPercent < 95 && subtitle) {
         subtitle.textContent = loadingMessages[messageIndex % loadingMessages.length];
         messageIndex++;
       }
-    }, 2500);
+    }, 2000);
   }
 
   // Original Modal Functions (kept for compatibility)
@@ -2145,6 +2226,27 @@ Status: PRIORITY CASE - Immediate Response`;
     
     activeChannel = null;
   }
+  
+  function setupFAQs() {
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+        if (content && icon) {
+          document.querySelectorAll('.faq-content').forEach(otherContent => {
+            if (otherContent !== content) {
+              otherContent.classList.add('hidden');
+              const otherIcon = otherContent.parentElement.querySelector('.faq-icon');
+              if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+            }
+          });
+          content.classList.toggle('hidden');
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+      });
+    }); 
+  }
+  
 </script>
 
 </body>
