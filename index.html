@@ -15,7 +15,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style> 
-    /* CSS Variables */
+    /* ========================================
+       CSS VARIABLES
+       ======================================== */
     :root{
       --primary: #4F46E5;
       --primary-dark: #3730A3;
@@ -28,18 +30,12 @@
       --text-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 
-    /* Premium Typography */
-    .font-display {
-      font-family: 'Playfair Display', Georgia, serif;
-    }
-    
-    .font-modern {
-      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    
-    .font-body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
+    /* ========================================
+       TYPOGRAPHY
+       ======================================== */
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .font-modern { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .font-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -48,7 +44,9 @@
       line-height: 1.6;
     }
 
-    /* Premium Text Effects */
+    /* ========================================
+       TEXT GRADIENTS
+       ======================================== */
     .text-gradient {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       -webkit-background-clip: text;
@@ -77,24 +75,9 @@
       background-clip: text;
     }
 
-    /* Advanced Text Shadows */
-    .text-shadow-soft {
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .text-shadow-medium {
-      text-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    }
-    
-    .text-shadow-strong {
-      text-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
-    
-    .text-shadow-glow {
-      text-shadow: 0 0 20px rgba(79, 70, 229, 0.4), 0 0 40px rgba(79, 70, 229, 0.2);
-    }
-
-    /* Premium Loading Screen Styles */
+    /* ========================================
+       LOADING SCREEN
+       ======================================== */
     .loading-container {
       background: linear-gradient(135deg, #1F2937 0%, #374151 50%, #111827 100%);
       min-height: 100vh;
@@ -283,7 +266,9 @@
       }
     }
 
-    /* Premium Card Effects */
+    /* ========================================
+       CARD STYLES
+       ======================================== */
     .premium-card {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(20px);
@@ -306,7 +291,9 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
     }
 
-    /* Premium Headings */
+    /* ========================================
+       HEADINGS
+       ======================================== */
     .premium-heading {
       font-family: 'Playfair Display', Georgia, serif;
       font-weight: 700;
@@ -336,7 +323,9 @@
       font-weight: 600;
     }
 
-    /* Premium Body Text */
+    /* ========================================
+       BODY TEXT
+       ======================================== */
     .premium-text {
       font-family: 'Inter', sans-serif;
       line-height: 1.7;
@@ -356,31 +345,9 @@
       font-weight: 500;
     }
 
-    /* Animated Text Effects */
-    .text-animate-in {
-      animation: textSlideUp 0.8s ease-out both;
-    }
-    
-    .text-animate-in-delay-1 {
-      animation: textSlideUp 0.8s ease-out 0.2s both;
-    }
-    
-    .text-animate-in-delay-2 {
-      animation: textSlideUp 0.8s ease-out 0.4s both;
-    }
-
-    @keyframes textSlideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Premium Effects */
+    /* ========================================
+       ANIMATIONS
+       ======================================== */
     .fade-in { 
       animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) both; 
     }
@@ -411,7 +378,9 @@
       }
     }
 
-    /* Verification Tick */
+    /* ========================================
+       VERIFICATION & STATUS
+       ======================================== */
     .verification-tick {
       display: inline-flex;
       align-items: center;
@@ -435,7 +404,6 @@
       }
     }
 
-    /* Online Status */
     .online-status {
       position: fixed;
       top: 80px; left: 50%;
@@ -474,7 +442,9 @@
       }
     }
 
-    /* Enhanced AI Support Bot Styles */
+    /* ========================================
+       AI SUPPORT BOT
+       ======================================== */
     .ai-support-bot {
       position: fixed;
       bottom: 24px;
@@ -604,20 +574,6 @@
       font-size: 12px;
       color: #6B7280;
     }
-
-    
-    .premium-card {
-      background: white;
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      transition: all 0.3s ease;
-    }
-
-    .premium-card:hover {
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-      transform: translateY(-4px);
-    }
-    
     
     .support-options {
       display: flex;
@@ -674,7 +630,9 @@
       color: #6B7280;
     }
 
-    /* Success Stories Enhancement */
+    /* ========================================
+       SUCCESS STORIES
+       ======================================== */
     .success-wix {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(15px);
@@ -701,7 +659,9 @@
       margin-bottom: 0.75rem;
     }
 
-    /* Enhanced Buttons */
+    /* ========================================
+       BUTTONS
+       ======================================== */
     .premium-btn {
       position: relative;
       overflow: hidden;
@@ -723,7 +683,9 @@
       left: 100%;
     }
 
-    /* Support Form Modal */
+    /* ========================================
+       MODALS
+       ======================================== */
     .support-modal {
       position: fixed;
       inset: 0;
@@ -759,46 +721,119 @@
       transform: scale(1) translateY(0);
     }
 
-    /* Responsive Typography */
-    @media (max-width: 768px) {
-      .premium-heading-xl { font-size: 2.5rem; }
-      .premium-heading-lg { font-size: 2rem; }
-      .premium-heading-md { font-size: 1.5rem; }
-      .premium-text-lead { font-size: 1.125rem; }
-      .loading-title { font-size: 2rem; }
-      .loading-subtitle { font-size: 1rem; }
-      
-      .bot-panel {
-        width: 280px;
-      }
-      
-      .ai-support-bot {
-        bottom: 20px;
-        right: 20px;
-      }
+    /* ========================================
+       TICKER & SLIDESHOW
+       ======================================== */
+    .ticker-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      text-align: center;
+      font-family: "Inter", Arial, sans-serif;
     }
 
-    @media (max-width: 480px) {
-      .premium-heading-xl { font-size: 2rem; }
-      .premium-heading-lg { font-size: 1.75rem; }
-      .premium-heading-md { font-size: 1.25rem; }
-      
-      .bot-panel {
-        width: 260px;
-      }
+    .ticker-wrapper {
+      overflow: hidden;
+      background: linear-gradient(90deg, #111, #333);
+      color: #fff;
+      white-space: nowrap;
+      border-radius: 40px;
+      padding: 14px 0;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
+
+    .ticker {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 25s linear infinite;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .fade-images {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      height: 500px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .image-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0;
+      transition: opacity 1.8s ease-in-out, transform 6s ease;
+    }
+
+    .image-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.1);
+    }
+
+    .image-slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .image-slide.active img {
+      transform: scale(1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      z-index: 4;
+    }
+
+    .image-slide.active .caption {
+      opacity: 1;
+    }
+
+    .fade-images::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+      z-index: 3;
+      pointer-events: none;
+      border-radius: 20px;
+    }
+    
   </style>
 
   <link id="faviconLink" rel="icon" href="">
 </head>
 <body class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 text-gray-900 antialiased">
 
-<!-- Configuration -->
+<!-- ========================================
+     CONFIGURATION SCRIPT
+     ======================================== -->
 <script>
   const CONFIG = {
     logoUrl: "https://i.pinimg.com/736x/3a/9d/91/3a9d9115f2936dbd8979e34381da7973.jpg",
     whatsappNumber: "2349032365125",
-    telegramUsername: "t.me/Xcellexert",
+    telegramUsername: "Xcellexert",
     supportEmail: "xcellexpert.storeagent@gmail.com",
     
     developer: {
@@ -814,11 +849,13 @@
     },
     
     ticketId: "SX-119.001",
-    loadingDuration: 3000
+    loadingDuration: 2000
   };
 </script>
 
-<!-- Loading Screen -->
+<!-- ========================================
+     LOADING SCREEN
+     ======================================== -->
 <div id="loading" class="loading-container">
   <div class="loading-content">
     <div class="loading-icon">
@@ -841,17 +878,20 @@
   </div>
 </div>
 
-<!-- Online Status -->
+<!-- ========================================
+     ONLINE STATUS
+     ======================================== -->
 <div id="onlineStatus" class="online-status hidden">
   <div class="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-3 shadow-xl flex items-center gap-3">
     <div class="online-dot"></div>
-    <span class="text-sm font-semibold text-gray-700">Active</span>
+    <span class="text-sm font-semibold text-gray-700">Connected</span>
   </div>
 </div>
 
-<!-- Main Content -->
 <main id="main" class="hidden min-h-screen pb-12">
-  <!-- Header -->
+   <!-- ========================================
+       HEADER
+       ======================================== -->
   <header class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-200/50 z-30 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <div class="flex items-center gap-4">
@@ -867,8 +907,9 @@
       </div>
     </div>
   </header>
-
-  <!-- Hero Section -->
+<!-- ========================================
+       HERO SECTION
+       ======================================== -->
   <section class="max-w-5xl mx-auto px-4 py-12 grid gap-10 md:grid-cols-[1.2fr_0.8fr]">
     <!-- LEFT: ADVISOR CARD -->
     <div class="premium-card rounded-3xl p-8 md:p-10 slide-up premium-hover">
@@ -887,14 +928,10 @@
           <strong class="text-gradient-gold">Priority Case:</strong> Immediate advisor attention required for compliance review.
         </p>
       </div>
-
-      <!-- Developer Profile -->
+ <!-- Developer Profile -->
       <div class="flex items-start gap-8">
         <div class="relative">
           <img id="developerPhoto" src="" alt="Developer" class="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-2 border-emerald-200 shadow-lg" />
-          <div class="">
-            <div class="w-4 h-4 bg-white rounded-full"></div>
-          </div>
         </div>
         
         <div class="flex-1">
@@ -954,10 +991,10 @@
       <!-- Security notice -->
       <p class="mt-4 flex items-center gap-3 premium-text text-gray-600">
         <svg class="w-4 h-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4s-3 1.567-3 3.5S10.343 11 12 11z"/></svg>
-        All conversations are encrypted and handled under <strong class="text-gradient-emerald"></strong>.
+        All conversations are encrypted and handled under <strong class="text-gradient-emerald">strict confidentiality</strong>.
       </p>
     </div>
-
+    
      </div>
       <div class="hero-gallery__main-image">
         <video src="https://www.charleagency.com/assets/videos/hero-video.mp4" autoplay muted loop playsinline></video>
@@ -991,31 +1028,105 @@
         </li>
       </ol>
 
+      <!-- Divider -->
+    <div class="relative z-10 my-16 border-t border-gray-200"></div>
+      
       <!-- GROWTH SUPPORT SECTION -->
-      <div class="mt-8 bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200/50 p-6 rounded-2xl shadow-sm">
-        <h3 class="premium-heading font-semibold text-base text-emerald-700 mb-3 flex items-center gap-3">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-          </svg>
-          Premium Growth & Marketing
-        </h3>
-        <ul class="premium-text text-xs text-gray-700 space-y-2">
-          <li class="flex items-center gap-2">
-            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-            Store speed & conversion optimization
-          </li>
-          <li class="flex items-center gap-2">
-            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-            SEO & visibility improvements
-          </li>
-          <li class="flex items-center gap-2">
-            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-            Paid ads funnel strategy
-          </li>
-          <li class="flex items-center gap-2">
-            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-            Trust badges & retention tools
-          </li>
+       <!-- Services Grid -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="100"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-shield-halved text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Compliance & Security</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            <span class="font-medium">Fraud prevention, legal audits,</span> and enterprise-level safeguards to protect your store & customers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="200"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-bullhorn text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Marketing & Growth</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            <span class="font-medium">Data-driven campaigns</span>, automation & customer retention strategies that boost sales sustainably.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="300"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-chart-line text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">SEO & Visibility</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            Dominate search engines with <span class="font-medium">Shopify-specific SEO strategies</span> that attract qualified buyers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card -->
+      <div data-aos="fade-up" data-aos-delay="400"
+           class="group relative rounded-2xl p-8 border border-gray-100 bg-white shadow-md hover:shadow-green-200/60 transition-all duration-500 hover:-translate-y-1">
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-green-400/20 via-transparent to-emerald-500/20 opacity-0 group-hover:opacity-100 blur-xl transition"></div>
+        <div class="relative">
+          <div class="flex items-center justify-center w-16 h-16 mb-6 rounded-xl bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-gear text-green-600 text-3xl"></i>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-3">Shopify Optimization</h4>
+          <p class="text-base text-gray-600 leading-relaxed">
+            Implement <span class="font-medium">best practices</span> to enhance UX, improve conversions & streamline store operations.
+          </p>
+        </div>
+      </div>
+    </div>
+          
+          <!-- Divider -->
+    <div class="relative z-10 my-16 border-t border-gray-200"></div>
+
+    <!-- ✅ Metrics Section -->
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center" data-aos="fade-up" data-aos-delay="500">
+      <div>
+        <h4 class="text-4xl font-extrabold text-gray-900 mb-2">+250</h4>
+        <p class="text-gray-600">Shopify Stores Optimized</p>
+      </div>
+      <div>
+        <h4 class="text-4xl font-extrabold text-green-600 mb-2">+40%</h4>
+        <p class="text-gray-600">Avg. Conversion Uplift</p>
+      </div>
+      <div>
+        <h4 class="text-4xl font-extrabold text-gray-900 mb-2">99.9%</h4>
+        <p class="text-gray-600">Platform Uptime & Reliability</p>
+      </div>
+    </div>
+
+
+
+    <!-- Divider -->
+    <div class="relative z-10 my-16 border-t border-gray-200"></div>
+
+    <!-- CTA -->
+    <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="700">
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        We combine <span class="text-green-600 font-semibold">strategy, technology, and creativity</span> to deliver results that matter.  
+        Not just quick fixes — but <span class="font-medium">long-term growth</span> for your Shopify store.
+      </p>
+          
         </ul>
         <button data-channel="whatsapp" class="contactBtn premium-btn mt-4 w-full rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white py-3 text-sm font-semibold transition-all duration-300 shadow-md">Talk to Growth Advisor</button>
       </div>
@@ -1031,7 +1142,22 @@
     </aside>
   </section>
 
-  <!-- Recent Merchant Success Stories -->
+  <!-- ========================================
+       TICKER & CLIENT SLIDESHOW
+       ======================================== -->
+  <section class="ticker-section">
+    <!-- Premium ticker bar -->
+    <div class="ticker-wrapper">
+      <div class="ticker">
+        🏆 Trusted by 500+ Shopify merchants worldwide • 🚀 98% client satisfaction rate • 💎 Shopify Partner verified • ⭐ 4.9/5 average rating • 📈 $50M+ in client revenue generated • 🔒 Enterprise-level security • 
+        🏆 Trusted by 500+ Shopify merchants worldwide • 🚀 98% client satisfaction rate • 💎 Shopify Partner verified • ⭐ 4.9/5 average rating • 📈 $50M+ in client revenue generated • 🔒 Enterprise-level security •
+      </div>
+    </div>
+    
+    
+    <!-- ========================================
+       SUCCESS STORIES
+       ======================================== -->
   <section class="max-w-6xl mx-auto px-4 mb-12">
     <div class="premium-card rounded-3xl p-10">
       <h3 class="premium-heading-lg text-center mb-8 text-shadow-medium">Recent Merchant Success Stories</h3>
@@ -1041,7 +1167,6 @@
         <div class="success-wix">
           <video class="w-full h-48 object-cover rounded-t-2xl" autoplay muted loop playsinline>
             <source src="https://v1.pinimg.com/videos/mc/expMp4/d5/00/1f/d5001f1e9b700f8992c70aac15a2f245_t1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
           <div class="p-6">
             <div class="success-metric text-shadow-soft">+30% conversion</div>
@@ -1055,7 +1180,6 @@
         <div class="success-wix">
           <video class="w-full h-48 object-cover rounded-t-2xl" autoplay muted loop playsinline>
             <source src="https://v1.pinimg.com/videos/mc/expMp4/2f/a5/71/2fa571d90cddf28fb4656dac4f26468f_t1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
           <div class="p-6">
             <div class="success-metric text-shadow-soft">+45% organic traffic</div>
@@ -1068,8 +1192,7 @@
         <!-- Success Story 3 -->
         <div class="success-wix">
           <video class="w-full h-48 object-cover rounded-t-2xl" autoplay muted loop playsinline>
-            <source src="https://v1.pinimg.com/videos/mc/expMp4/a4/d7/62/a4d762f9abc98aac436c0813e82773ec_t1.mp4">
-            Your browser does not support the video tag.
+            <source src="https://v1.pinimg.com/videos/mc/expMp4/a4/d7/62/a4d762f9abc98aac436c0813e82773ec_t1.mp4" type="video/mp4">
           </video>
           <div class="p-6">
             <div class="success-metric text-shadow-soft">+40% revenue</div>
@@ -1081,8 +1204,1295 @@
       </div>
     </div>
   </section>
+    
+    
+<!-- Seasonal Interactive Funnel -->
+<section class="seasonal-funnel" aria-labelledby="seasonalHeading">
+  <div class="intro">
+    <div class="intro-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      Strategic Growth Partner
+    </div>
+    <h1 id="seasonalHeading">Turn Every Season Into <span class="gradient-text">Revenue Gold</span></h1>
+    <p>
+      Your customers are actively shopping on <strong>Instagram, TikTok, and Facebook Shops</strong> right now.
+      Partner with our expert advisors to build seasonal strategies that drive real conversions.
+    </p>
+  </div>
 
-  <!-- Case Studies -->
+  <div class="season-grid" role="list">
+    <!-- Black Friday -->
+    <article class="season-card" data-season="blackfriday" role="listitem">
+      <div class="card-inner">
+        <div class="img-wrap">
+          <div class="season-icon">⚡</div>
+          <img src="https://i.pinimg.com/736x/3c/f8/de/3cf8dea454f7638db44f0b9415993bba.jpg" alt="Black Friday deals" loading="lazy">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="content-wrap">
+          <div class="badge-row">
+            <span class="premium-badge">Premium</span>
+            <span class="timing-badge">Nov 24-29</span>
+          </div>
+          <h2>Black Friday</h2>
+          <p>Peak shopping season demands peak performance. Our team ensures your store captures every ready-to-buy customer with precision targeting and conversion optimization.</p>
+          <div class="features">
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              Ad Targeting
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Email Flows
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+              Shop Setup
+            </span>
+          </div>
+          <button class="open-offer" data-target="blackfriday" aria-controls="offerModal">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Christmas -->
+    <article class="season-card" data-season="christmas" role="listitem">
+      <div class="card-inner">
+        <div class="img-wrap">
+          <div class="season-icon">🎄</div>
+          <img src="https://i.imgur.com/pxxDUI2.png" alt="Christmas shopping" loading="lazy">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="content-wrap">
+          <div class="badge-row">
+            <span class="premium-badge">Premium</span>
+            <span class="timing-badge">Dec 1-25</span>
+          </div>
+          <h2>Christmas</h2>
+          <p>Emotional buying peaks during the holidays. We craft campaigns that connect hearts to your brand and create memorable shopping experiences.</p>
+          <div class="features">
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 12v10H4V12"/>
+                <path d="M2 7h20v5H2z"/>
+                <path d="M12 22V7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+              Gift Bundles
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              Festive Ads
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                <polyline points="17 6 23 6 23 12"/>
+              </svg>
+              Retargeting
+            </span>
+          </div>
+          <button class="open-offer" data-target="christmas" aria-controls="offerModal">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- New Year -->
+    <article class="season-card" data-season="newyear" role="listitem">
+      <div class="card-inner">
+        <div class="img-wrap">
+          <div class="season-icon">🎉</div>
+          <img src="https://i.imgur.com/A3xWWJU.png" alt="New Year deals" loading="lazy">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="content-wrap">
+          <div class="badge-row">
+            <span class="premium-badge">Premium</span>
+            <span class="timing-badge">Dec 26-Jan 7</span>
+          </div>
+          <h2>New Year</h2>
+          <p>Fresh starts mean fresh customers. Position your products as the must-have for new beginnings and resolutions.</p>
+          <div class="features">
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+              </svg>
+              Store Refresh
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              Social Ads
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              Retention
+            </span>
+          </div>
+          <button class="open-offer" data-target="newyear" aria-controls="offerModal">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Winter -->
+    <article class="season-card" data-season="winter" role="listitem">
+      <div class="card-inner">
+        <div class="img-wrap">
+          <div class="season-icon">❄️</div>
+          <img src="https://i.imgur.com/tvFkrxq.jpeg" alt="Winter sales" loading="lazy">
+          <div class="img-overlay"></div>
+        </div>
+        <div class="content-wrap">
+          <div class="badge-row">
+            <span class="premium-badge">Premium</span>
+            <span class="timing-badge">Jan-Feb</span>
+          </div>
+          <h2>Winter</h2>
+          <p>Turn the quiet season into your secret weapon with strategic retargeting and smart bundling that keeps revenue flowing.</p>
+          <div class="features">
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 7l-7 5 7 5V7z"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+              TikTok Ads
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+              Bundles
+            </span>
+            <span class="feature-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+              </svg>
+              Warm Flows
+            </span>
+          </div>
+          <button class="open-offer" data-target="winter" aria-controls="offerModal">
+            <span>Get Started</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Modal -->
+  <div id="offerModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" role="document">
+      <button class="close" aria-label="Close offer modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6L18 18"/>
+        </svg>
+      </button>
+      <div id="offerDetails" class="offer-details"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  :root { 
+    --primary: #2e2e2e;
+    --primary-dark: #1a1a1a;
+    --accent: #5c6ac4;
+    --accent-hover: #4c5db8;
+    --accent-light: #f4f5f9;
+    --success: #00a862;
+    --success-light: #d4f5e9;
+    --text: #202223;
+    --text-secondary: #6d7175;
+    --text-muted: #8c9196;
+    --border: #e1e3e5;
+    --border-light: #f1f2f4;
+    --bg: #f6f6f7;
+    --card-bg: #ffffff;
+    --shadow-sm: 0 1px 0 rgba(0,0,0,0.05);
+    --shadow-card: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+    --shadow-card-hover: 0 4px 8px rgba(0,0,0,0.08), 0 0 0 1px rgba(63,63,68,0.05);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.1);
+    --shadow-xl: 0 12px 28px rgba(0,0,0,0.12);
+    --radius-base: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+  }
+  
+  * { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text);
+  }
+  
+  .seasonal-funnel { 
+    min-height: 100vh;
+    padding: 5rem 2rem; 
+    background: var(--bg);
+  }
+  
+  .intro { 
+    max-width: 920px; 
+    margin: 0 auto 4rem; 
+    text-align: center; 
+  }
+
+  .intro-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    color: var(--text);
+    border-radius: 50px;
+    font-size: 0.813rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.2px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+  }
+
+  .intro-badge svg {
+    fill: var(--accent);
+  }
+  
+  .intro h1 { 
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--primary-dark);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .intro p { 
+    color: var(--text-secondary); 
+    font-size: 1.125rem;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+  .season-grid { 
+    display: grid; 
+    gap: 1.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .season-card { 
+    background: var(--card-bg);
+    border-radius: var(--radius-lg); 
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    border: 1px solid var(--border);
+  }
+  
+  .season-card:hover { 
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(92, 106, 196, 0.2);
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .img-wrap { 
+    width: 100%; 
+    aspect-ratio: 16/9; 
+    overflow: hidden; 
+    position: relative;
+    background: var(--border-light);
+  }
+
+  .season-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 2;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.15) 100%);
+    z-index: 1;
+  }
+  
+  .img-wrap img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .season-card:hover .img-wrap img { 
+    transform: scale(1.05);
+  }
+
+  .content-wrap { 
+    padding: 1.5rem; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.875rem;
+    flex: 1;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .premium-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 4px;
+    font-size: 0.688rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .timing-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    background: var(--border-light);
+    color: var(--text-secondary);
+    border-radius: 4px;
+    font-size: 0.688rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  
+  .content-wrap h2 { 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  
+  .content-wrap > p { 
+    color: var(--text-secondary); 
+    font-size: 0.938rem;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .features {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0.25rem 0;
+  }
+
+  .feature-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    background: var(--border-light);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .feature-tag svg {
+    stroke: var(--text-muted);
+  }
+  
+  .content-wrap button { 
+    margin-top: 0.5rem;
+    background: var(--primary);
+    color: #fff; 
+    padding: 0.875rem 1.5rem; 
+    border-radius: var(--radius-base); 
+    border: 0; 
+    cursor: pointer; 
+    font-weight: 600; 
+    font-size: 0.938rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content-wrap button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--primary-dark);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .content-wrap button span,
+  .content-wrap button svg {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content-wrap button:focus { 
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  
+  .content-wrap button:hover::before {
+    opacity: 1;
+  }
+
+  .content-wrap button:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .content-wrap button:hover svg {
+    transform: translateX(3px);
+  }
+
+  .content-wrap button svg {
+    transition: transform 0.2s ease;
+  }
+
+  /* Modal */
+  .modal { 
+    display: none; 
+    position: fixed; 
+    inset: 0;
+    z-index: 9999; 
+    padding: 1rem;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .modal[aria-hidden="false"] { 
+    display: flex; 
+  }
+
+  .modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(16px) scale(0.98);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .modal-content { 
+    width: 100%; 
+    max-width: 680px; 
+    background: var(--card-bg);
+    border-radius: var(--radius-xl); 
+    padding: 2.5rem; 
+    max-height: 90vh; 
+    overflow-y: auto; 
+    position: relative; 
+    box-shadow: var(--shadow-xl);
+    animation: slideUp 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1;
+    border: 1px solid var(--border);
+  }
+  
+  .close { 
+    position: absolute; 
+    right: 1.5rem; 
+    top: 1.5rem; 
+    border: 1px solid var(--border); 
+    background: var(--card-bg);
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: all 0.2s ease;
+    z-index: 10;
+    color: var(--text-secondary);
+  }
+  
+  .close:hover {
+    background: var(--border-light);
+    border-color: var(--text-muted);
+    color: var(--text);
+  }
+  
+  .offer-details h2 { 
+    margin: 0 0 0.5rem 0; 
+    font-size: 1.875rem;
+    font-weight: 600;
+    padding-right: 2rem;
+    color: var(--primary-dark);
+    letter-spacing: -0.02em;
+  }
+  
+  .offer-details > p { 
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.65;
+    font-size: 1rem;
+  }
+
+  .offer-details ul { 
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    list-style: none;
+    background: var(--accent-light);
+    border-radius: var(--radius-base);
+    padding: 1rem;
+  }
+
+  .offer-details ul li {
+    padding: 0.75rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+    color: var(--text);
+    border-bottom: 1px solid rgba(92, 106, 196, 0.1);
+    font-size: 0.938rem;
+  }
+
+  .offer-details ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .offer-details ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.95rem;
+    width: 16px;
+    height: 16px;
+    background: var(--success);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .offer-details ul li::after {
+    content: '✓';
+    position: absolute;
+    left: 4px;
+    top: 0.8rem;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  
+  .offer-badge { 
+    display: inline-block; 
+    background: linear-gradient(135deg, var(--success), #00d672);
+    color: white;
+    padding: 0.875rem 1.5rem; 
+    border-radius: var(--radius-base); 
+    font-weight: 700; 
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 168, 98, 0.25);
+    letter-spacing: -0.01em;
+  }
+
+  .advisor-intro {
+    background: var(--accent-light);
+    padding: 1.25rem;
+    border-radius: var(--radius-base);
+    margin: 1.5rem 0;
+    border-left: 3px solid var(--accent);
+  }
+
+  .advisor-intro p {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.938rem;
+    line-height: 1.6;
+  }
+
+  /* Lead form */
+  form.lead { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.25rem; 
+    margin-top: 1.5rem; 
+  }
+
+  form.lead label {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.813rem;
+    margin-bottom: 0.375rem;
+    display: block;
+    letter-spacing: 0.2px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form.lead input, 
+  form.lead select,
+  form.lead textarea { 
+    padding: 0.75rem 0.875rem; 
+    border-radius: var(--radius-base); 
+    border: 1px solid var(--border);
+    font-size: 0.938rem; 
+    font-family: inherit;
+    transition: all 0.2s ease;
+    background: var(--card-bg);
+    color: var(--text);
+  }
+
+  form.lead textarea {
+    min-height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+  }
+
+  form.lead input:focus,
+  form.lead select:focus,
+  form.lead textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(92, 106, 196, 0.1);
+  }
+
+  form.lead input::placeholder,
+  form.lead textarea::placeholder {
+    color: var(--text-muted);
+  }
+
+  .char-count {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: right;
+    margin-top: 0.25rem;
+  }
+  
+  form.lead button.submit-btn { 
+    margin-top: 0.5rem; 
+    background: var(--accent);
+    color: #fff; 
+    border: 0; 
+    padding: 1rem 2rem; 
+    border-radius: var(--radius-base); 
+    font-weight: 600; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  form.lead button.submit-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent-hover);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  form.lead button.submit-btn span {
+    position: relative;
+    z-index: 1;
+  }
+
+  form.lead button.submit-btn:hover::before {
+    opacity: 1;
+  }
+
+  form.lead button.submit-btn:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  form.lead button.submit-btn:active {
+    transform: scale(0.98);
+  }
+
+  form.lead button.submit-btn:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  
+  .contact-options { 
+    display: flex; 
+    gap: 0.75rem; 
+    margin-top: 1rem; 
+    flex-wrap: wrap; 
+  }
+  
+  .contact-options a { 
+    flex: 1;
+    min-width: 180px;
+    padding: 1rem 1.5rem; 
+    border-radius: var(--radius-base); 
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: 600; 
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-card);
+    font-size: 0.938rem;
+  }
+
+  .contact-options a:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .contact-options a:active {
+    transform: translateY(0);
+  }
+  
+  .whatsapp { 
+    background: linear-gradient(135deg, #25D366, #128C7E);
+  }
+  
+  .telegram { 
+    background: linear-gradient(135deg, #0088cc, #0066a8);
+  }
+
+  #afterSubmit {
+    background: var(--success-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-base);
+    border-left: 3px solid var(--success);
+  }
+
+  #afterSubmit p {
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.938rem;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  @media (max-width: 768px) { 
+    .seasonal-funnel {
+      padding: 3rem 1rem;
+    }
+
+    .intro h1 { 
+      font-size: 2rem;
+    } 
+
+    .intro p {
+      font-size: 1rem;
+    }
+    
+    .season-grid {
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    
+    .modal-content { 
+      padding: 2rem 1.5rem;
+      border-radius: var(--radius-lg);
+    }
+
+    .close {
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .contact-options {
+      flex-direction: column;
+    }
+
+    .contact-options a {
+      min-width: 100%;
+    }
+
+    .offer-details h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Scrollbar styling */
+  .modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    background: var(--border-light);
+    border-radius: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+</style>
+
+<script>
+  const offerContent = {
+    blackfriday: {
+      title: "⚡ Black Friday Power Setup",
+      desc: "Get primed before the Black Friday storm. Our advisors will set up offers, ads, and bundles that stop the scroll and convert browsers into buyers.",
+      items: [
+        "Facebook & Instagram Shop setup & optimization",
+        "High-converting ad campaign targeting strategy",
+        "Automated discount email & SMS flows",
+        "Live buyer engagement & chat setup",
+        "Conversion-optimized landing pages"
+      ],
+      offer: "Up to 50% OFF Full Black Friday Setup",
+      services: [
+        "Marketing Campaign Setup",
+        "Social Media Shop Integration",
+        "Ad Copy & Creatives",
+        "Store Optimization",
+        "Email & SMS Automation",
+        "Security / Fraud Alert",
+        "Full Package (Everything)"
+      ]
+    },
+    christmas: {
+      title: "🎄 Christmas Profit Plan",
+      desc: "Use story-led campaigns and gift bundles to turn holiday emotion into purchases. Our team creates festive experiences that convert.",
+      items: [
+        "Festive ad content with seasonal storytelling",
+        "Strategic gift bundles & upsell sequences",
+        "Holiday-themed email & SMS campaigns",
+        "Last-minute buyer retargeting setup",
+        "Christmas landing page design"
+      ],
+      offer: "Free Email Setup + 30% OFF Campaign Plan",
+      services: [
+        "Marketing Campaign Setup",
+        "Social Media Shop Integration",
+        "Ad Copy & Creatives",
+        "Store Optimization",
+        "Email & SMS Automation",
+        "Security / Fraud Alert",
+        "Full Package (Everything)"
+      ]
+    },
+    newyear: {
+      title: "🎉 New Year Growth Setup",
+      desc: "Position your products as 'new year must-haves' and keep momentum going. Start the year with strong campaigns and returning customers.",
+      items: [
+        "Store refresh & visual rebrand",
+        "Social ad optimization for new year goals",
+        "Customer retention automation flows",
+        "Countdown relaunch campaign",
+        "Resolution-focused messaging strategy"
+      ],
+      offer: "30% OFF Ad Optimization Package",
+      services: [
+        "Marketing Campaign Setup",
+        "Social Media Shop Integration",
+        "Ad Copy & Creatives",
+        "Store Optimization",
+        "Email & SMS Automation",
+        "Security / Fraud Alert",
+        "Full Package (Everything)"
+      ]
+    },
+    winter: {
+      title: "❄️ Winter Sales Booster",
+      desc: "Heat up slow months with retargeting, bundles, and TikTok-native creative. Turn the quiet season into your secret sales weapon.",
+      items: [
+        "TikTok + Meta Ads creative setup",
+        "Strategic bundle campaigns & pricing",
+        "Winter-themed banners & visuals",
+        "Warm audience retargeting flows",
+        "Seasonal product positioning"
+      ],
+      offer: "40% OFF Social Ads Setup",
+      services: [
+        "Marketing Campaign Setup",
+        "Social Media Shop Integration",
+        "Ad Copy & Creatives",
+        "Store Optimization",
+        "Email & SMS Automation",
+        "Security / Fraud Alert",
+        "Full Package (Everything)"
+      ]
+    }
+  };
+
+  const modal = document.getElementById('offerModal');
+  const offerDetails = document.getElementById('offerDetails');
+
+  function openModalFor(key) {
+    const data = offerContent[key];
+    if (!data) return;
+
+    const serviceOptions = data.services.map(s => `<option value="${s}">${s}</option>`).join('');
+
+    offerDetails.innerHTML = `
+      <h2 id="modalTitle">${data.title}</h2>
+      <p>${data.desc}</p>
+      <ul>${data.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      <div class="offer-badge">${data.offer}</div>
+
+      <div class="advisor-intro">
+        <p><strong>👋 Ready to lock this in?</strong> Fill out the form below and our live advisor will reach out to tailor your perfect seasonal strategy.</p>
+      </div>
+
+      <form class="lead" id="leadForm" aria-label="Talk to Live Advisor">
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="storeurl">Store URL *</label>
+          <input id="storeurl" name="storeurl" type="url" placeholder="https://yourstore.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">What Service Do You Need? *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            ${serviceOptions}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Message (Optional)</label>
+          <textarea id="message" name="message" placeholder="Tell us more about your goals, challenges, or specific needs..." maxlength="500"></textarea>
+          <div class="char-count"><span id="charCount">0</span>/500</div>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span>📩 Connect Me to Live Advisor</span>
+        </button>
+      </form>
+
+      <div id="afterSubmit" style="display:none;">
+        <p>✅ Perfect! Our advisor is online now. Pick where you'd like to chat live:</p>
+        <div class="contact-options">
+          <a class="whatsapp" id="waLink" href="https://wa.me/2349032365125" target="_blank" rel="noopener">
+            💬 WhatsApp Chat
+          </a>
+          <a class="telegram" id="tgLink" href="https://t.me/Xcellexert" target="_blank" rel="noopener">
+            📨 Telegram Chat
+          </a>
+        </div>
+      </div>
+    `;
+
+    modal.setAttribute('aria-hidden', 'false');
+    modal.style.display = 'flex';
+
+    // Character counter for textarea
+    const messageField = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    
+    messageField.addEventListener('input', function() {
+      charCount.textContent = this.value.length;
+    });
+
+    const form = document.getElementById('leadForm');
+    const after = document.getElementById('afterSubmit');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = encodeURIComponent(form.fullname.value || '');
+      const email = encodeURIComponent(form.email.value || '');
+      const storeUrl = encodeURIComponent(form.storeurl.value || '');
+      const service = encodeURIComponent(form.service.value || '');
+      const message = encodeURIComponent(form.message.value || 'No additional message');
+      
+      const msg = `Hi 👋 I'm interested in ${data.title}%0A%0A` +
+                  `Name: ${name}%0A` +
+                  `Email: ${email}%0A` +
+                  `Store: ${storeUrl}%0A` +
+                  `Service: ${service}%0A` +
+                  `Message: ${message}`;
+      
+      document.getElementById('waLink').href = `https://wa.me/2349032365125?text=${msg}`;
+      document.getElementById('tgLink').href = `https://t.me/Xcellexert?text=${msg}`;
+
+      form.style.display = 'none';
+      after.style.display = 'block';
+    }, { once: true });
+  }
+
+  // Wire buttons
+  document.querySelectorAll('.open-offer').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.target;
+      openModalFor(key);
+    });
+  });
+
+  // Close handlers
+  document.querySelectorAll('.close').forEach(c => {
+    c.addEventListener('click', closeModal);
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // ESC closes
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+      closeModal();
+    }
+  });
+
+  function closeModal() {
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    offerDetails.innerHTML = '';
+  }
+</script>
+    
+    
+     <!-- ========================================
+       SERVICES SECTION
+       ======================================== -->
+  <section class="relative bg-gradient-to-b from-gray-900 via-gray-800 to-black py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+        🚀 Accelerate Your Store Growth
+      </h2>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-14">
+        Partner with our <span class="text-green-400 font-semibold">Shopify-certified experts</span> to unlock 
+        traffic, conversions, and long-term scalability. Every service is designed to 
+        <span class="text-green-400 font-semibold">maximize revenue</span> and streamline your operations.
+      </p>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Service Card 1 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-store text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Store Optimization</h3>
+          <p class="text-gray-400 mb-4">Streamline navigation, enhance speed & UX, and create a frictionless buying journey.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $299</span>
+          <button onclick="openServiceModal('Store Optimization','Starting at $299')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-magnifying-glass-chart text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Advanced SEO</h3>
+          <p class="text-gray-400 mb-4">Technical audits, keyword strategies & backlinks to boost organic growth.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $399</span>
+          <button onclick="openServiceModal('Advanced SEO','Starting at $399')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-chart-line text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">CRO & A/B Testing</h3>
+          <p class="text-gray-400 mb-4">Run data-driven experiments that increase conversions and customer retention.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $349</span>
+          <button onclick="openServiceModal('CRO & A/B Testing','Starting at $349')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-bullhorn text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Growth Marketing</h3>
+          <p class="text-gray-400 mb-4">Leverage automation, loyalty flows & retargeting campaigns that scale sales.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $279</span>
+          <button onclick="openServiceModal('Growth Marketing','Starting at $279')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-server text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Shopify Plus Migration</h3>
+          <p class="text-gray-400 mb-4">Enterprise-level migration with custom development & scalability features.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $599</span>
+          <button onclick="openServiceModal('Shopify Plus Migration','Starting at $599')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="group bg-gray-800 border border-gray-700 p-8 rounded-2xl hover:border-green-500 hover:shadow-2xl transition">
+          <div class="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition">
+            <i class="fa-solid fa-chart-pie text-green-400 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-2">Analytics & Reporting</h3>
+          <p class="text-gray-400 mb-4">Track KPIs with GA4, dashboards & custom insights for smarter decisions.</p>
+          <span class="block text-green-400 font-semibold mb-4">Starting at $199</span>
+          <button onclick="openServiceModal('Analytics & Reporting','Starting at $199')" 
+                  class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            Get Started
+          </button>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold text-white mb-4">
+          Ready to scale your store to the next level?
+        </h3>
+        <p class="text-gray-300 mb-6">Book a free consultation with our Shopify growth specialists today.</p>
+        <a href="javascript:void(0)" onclick="openServiceModal('Free Consultation','No cost')" 
+           class="inline-block px-8 py-4 bg-green-500 text-black font-bold rounded-full hover:bg-green-400 transition">
+          Book Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+    
+     <!-- ========================================
+       CASE STUDIES
+       ======================================== -->
   <section class="max-w-6xl mx-auto px-4 mb-12">
     <h2 class="premium-heading-lg text-center mb-10 text-shadow-medium">Case Studies & Results</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1120,14 +2530,17 @@
       </div>
     </div>
   </section>
-
-  <!-- Testimonials -->
+    
+    
+    <!-- ========================================
+       TESTIMONIALS
+       ======================================== -->
   <section class="max-w-6xl mx-auto px-4 mb-12">
     <h2 class="premium-heading-lg text-center mb-10 text-shadow-medium">What Clients Say</h2>
     <div class="grid md:grid-cols-2 gap-8">
       <div class="premium-card rounded-2xl p-8 premium-hover">
         <div class="flex items-center gap-4 mb-6">
-          <img src="https://i.pinimg.com/736x/60/14/8c/60148c47284685edb02a8c236a407845.jpg?w=150" alt="Client" class="w-16 h-16 rounded-full object-cover shadow-md" />
+          <img src="https://i.pinimg.com/736x/60/14/8c/60148c47284685edb02a8c236a407845.jpg" alt="Client" class="w-16 h-16 rounded-full object-cover shadow-md" />
           <div>
             <div class="font-bold text-base text-shadow-soft">Sarah Mitchell</div>
             <div class="premium-text text-gray-600">Founder, EcoLiving Store</div>
@@ -1162,302 +2575,10 @@
       </div>
     </div>
   </section>
-
-  <!-- Services Grid -->
-  <section class="max-w-6xl mx-auto px-4 mb-12">
-    <div class="premium-card rounded-3xl p-10">
-      <h3 class="premium-heading-lg text-center mb-6 text-shadow-medium">Comprehensive Store Growth Services</h3>
-      <p class="premium-text-lead text-center mb-10 max-w-3xl mx-auto">
-        Our certified specialist network provides <strong class="text-gradient">end-to-end merchant support</strong>:
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Service 1 -->
-        <button onclick="openModal('Store compliance audit & policy review', '$199')" 
-          class="premium-btn block p-6 border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition bg-white text-left w-full premium-hover">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="w-6 h-6 bg-gradient-to-br from-green-100 to-emerald-200 rounded-full flex items-center justify-center shadow-sm">
-              <i class="fa-solid fa-check text-emerald-600 text-sm"></i>
-            </div>
-            <span class="text-gray-800 font-semibold text-base">Store compliance audit & policy review</span>
-          </div>
-          <p class="premium-text mb-3">Ensure your store meets Shopify and legal compliance standards.</p>
-          <div class="text-gradient-emerald font-bold text-lg">Starting at $199</div>
-        </button>
-
-        <!-- Service 2 -->
-        <button onclick="openModal('Technical SEO optimization & site speed improvements', '$299')" 
-          class="premium-btn block p-6 border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition bg-white text-left w-full premium-hover">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="w-6 h-6 bg-gradient-to-br from-green-100 to-emerald-200 rounded-full flex items-center justify-center shadow-sm">
-              <i class="fa-solid fa-check text-emerald-600 text-sm"></i>
-            </div>
-            <span class="text-gray-800 font-semibold text-base">Technical SEO optimization & site speed improvements</span>
-          </div>
-          <p class="premium-text mb-3">Boost visibility and user experience with SEO + speed fixes.</p>
-          <div class="text-gradient-blue font-bold text-lg">Starting at $299</div>
-        </button>
-
-        <!-- Service 3 -->
-        <button onclick="openModal('Conversion rate optimization & A/B testing', '$249')" 
-          class="premium-btn block p-6 border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition bg-white text-left w-full premium-hover">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="w-6 h-6 bg-gradient-to-br from-green-100 to-emerald-200 rounded-full flex items-center justify-center shadow-sm">
-              <i class="fa-solid fa-check text-emerald-600 text-sm"></i>
-            </div>
-            <span class="text-gray-800 font-semibold text-base">Conversion rate optimization & A/B testing</span>
-          </div>
-          <p class="premium-text mb-3">Increase sales with data-driven CRO strategies.</p>
-          <div class="text-gradient font-bold text-lg">Starting at $249</div>
-        </button>
-        
-         <!-- Service 4 -->
-    <button onclick="openModal('Marketing automation & customer retention strategies', '$299')" 
-      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
-      <div class="flex items-center gap-3 mb-2">
-        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-          <i class="fa-solid fa-check text-green-600 text-xs"></i>
-        </div>
-        <span class="text-gray-800 font-medium">Marketing automation & customer retention strategies</span>
-      </div>
-      <p class="text-sm text-gray-600 mb-2">Engage customers and boost repeat sales with automation.</p>
-      <div class="text-green-700 font-semibold">Starting at $299</div>
-    </button>
-
-        <!-- Service 5 -->
-        <button onclick="openModal('24/7 merchant support & emergency response', '$399')" 
-          class="premium-btn block p-6 border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition bg-white text-left w-full premium-hover">
-          <div class="flex items-center gap-4 mb-3">
-            <div class="w-6 h-6 bg-gradient-to-br from-green-100 to-emerald-200 rounded-full flex items-center justify-center shadow-sm">
-              <i class="fa-solid fa-check text-emerald-600 text-sm"></i>
-            </div>
-            <span class="text-gray-800 font-semibold text-base">24/7 merchant support & emergency response</span>
-          </div>
-          <p class="premium-text mb-3">Get round-the-clock support and emergency fixes.</p>
-          <div class="text-gradient-gold font-bold text-lg">Starting at $399</div>
-        </button>
-        
-         <!-- Service 6 -->
-    <button onclick="openModal('Security headers & GDPR compliance implementation', '$229')" 
-      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
-      <div class="flex items-center gap-3 mb-2">
-        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-          <i class="fa-solid fa-check text-green-600 text-xs"></i>
-        </div>
-        <span class="text-gray-800 font-medium">Security headers & GDPR compliance implementation</span>
-      </div>
-      <p class="text-sm text-gray-600 mb-2">Ensure compliance and security with modern best practices.</p>
-      <div class="text-green-700 font-semibold">Starting at $229</div>
-    </button>
-        
-        <!-- Service 7 -->
-    <button onclick="openModal('App integration & workflow optimization', '$199')" 
-      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
-      <div class="flex items-center gap-3 mb-2">
-        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-          <i class="fa-solid fa-check text-green-600 text-xs"></i>
-        </div>
-        <span class="text-gray-800 font-medium">App integration & workflow optimization</span>
-      </div>
-      <p class="text-sm text-gray-600 mb-2">Save time by integrating apps and automating tasks.</p>
-      <div class="text-green-700 font-semibold">Starting at $199</div>
-    </button>
-        
-        <!-- Service 8 -->
-    <button onclick="openModal('Shopify Plus migration & custom development', '$499')" 
-      class="block p-4 border rounded-xl hover:shadow-lg transition bg-white text-left w-full">
-      <div class="flex items-center gap-3 mb-2">
-        <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-          <i class="fa-solid fa-check text-green-600 text-xs"></i>
-        </div>
-        <span class="text-gray-800 font-medium">Shopify Plus migration & custom development</span>
-      </div>
-      <p class="text-sm text-gray-600 mb-2">Seamlessly migrate or customize your Shopify Plus store.</p>
-      <div class="text-green-700 font-semibold">Starting at $499</div>
-    </button>
-        
-      </div>
-    </div>
-  </section>
-
-<!-- Pro Fading Images with Captions -->
-  <div class="fade-images">
-    <div class="image-slide active">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid1.webp" alt="Billionaire Boys Club">
-      <div class="caption">Billionaire Boys Club</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid5.webp" alt="Gray Nicolls Cricket">
-      <div class="caption">Gray Nicolls Cricket</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid6.webp" alt="CleanCo">
-      <div class="caption">CleanCo</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid9.webp" alt="RNLI">
-      <div class="caption">RNLI</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid10.webp" alt="Sunnamusk">
-      <div class="caption">Sunnamusk</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid14.webp" alt="Case furniture">
-      <div class="caption">Case Furniture</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid2.webp" alt="Cambridge Satchel">
-      <div class="caption">Cambridge Satchel</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid4.webp" alt="Candy Kittens">
-      <div class="caption">Candy Kittens</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid7.webp" alt="Gilbert Rugby">
-      <div class="caption">Gilbert Rugby</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid8.webp" alt="Unndr">
-      <div class="caption">Unndr</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid13.webp" alt="Bio&Me">
-      <div class="caption">Bio&Me</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid11.webp" alt="Vollebak">
-      <div class="caption">Vollebak</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid3.webp" alt="111Skin">
-      <div class="caption">111Skin</div>
-    </div>
-    <div class="image-slide">
-      <img src="https://www.charleagency.com/assets/images/home/grid/grid12.webp" alt="Muc-Off">
-      <div class="caption">Muc-Off</div>
-    </div>
-  </div>
-</section>
-<style>
-/* Layout wrapper */
-.ticker-section {
-  max-width: 1200px;
-  margin: 40px auto;
-  text-align: center;
-  font-family: "Inter", Arial, sans-serif;
-}
-
-/* Premium ticker bar */
-.ticker-wrapper {
-  overflow: hidden;
-  background: linear-gradient(90deg, #111, #333);
-  color: #fff;
-  white-space: nowrap;
-  border-radius: 40px;
-  padding: 14px 0;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.ticker {
-  display: inline-block;
-  padding-left: 100%;
-  animation: ticker 25s linear infinite;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-@keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
-/* Pro fading slideshow */
-.fade-images {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  height: 500px;
-  margin: 0 auto;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-}
-
-.image-slide {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  opacity: 0;
-  transition: opacity 1.8s ease-in-out, transform 6s ease;
-}
-
-.image-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.1);
-}
-
-.image-slide.active {
-  opacity: 1;
-  z-index: 2;
-}
-
-.image-slide.active img {
-  transform: scale(1);
-}
-
-/* Captions */
-.caption {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  z-index: 4;
-}
-
-.image-slide.active .caption {
-  opacity: 1;
-}
-
-/* Gradient overlay */
-.fade-images::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
-  z-index: 3;
-  pointer-events: none;
-  border-radius: 20px;
-}
-</style>
-
-<script>
-let index = 0;
-const slides = document.querySelectorAll(".image-slide");
-
-function showNextImage() {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}
-
-setInterval(showNextImage, 5000); // 5s per slide
-</script>
- <!-- END grid -->
-
-<!-- FAQ SECTION -->
+  
+     <!-- ========================================
+       FAQ SECTION
+       ======================================== -->
   <section class="max-w-4xl mx-auto px-4 py-12">
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Frequently Asked Questions</h2>
     
@@ -1503,41 +2624,71 @@ setInterval(showNextImage, 5000); // 5s per slide
       </div>
     </div>
   </section>
-
-
-  <!-- Lead Magnet -->
-  <section class="max-w-5xl mx-auto px-4 mb-12">
-    <div class="premium-card rounded-3xl p-10 text-center premium-hover">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="premium-heading-xl mb-4 text-shadow-medium">Get Free Store Audit</h2>
-        <p class="premium-text-lead mb-8">"<strong class="text-gradient">5 Hidden Store Mistakes That Kill Sales</strong>" - A detailed analysis of your current store with actionable fixes that can boost conversions by <strong class="text-gradient-emerald">30%+ in 30 days</strong>.</p>
-        
-        <div class="grid md:grid-cols-3 gap-6 mb-8 premium-text">
-          <div class="flex items-center gap-3 justify-center">
-            <i class="fas fa-chart-line text-emerald-600 text-xl"></i>
-            <span class="font-semibold">Conversion Rate Analysis</span>
-          </div>
-          <div class="flex items-center gap-3 justify-center">
-            <i class="fas fa-mobile-alt text-blue-600 text-xl"></i>
-            <span class="font-semibold">Mobile Optimization Review</span>
-          </div>
-          <div class="flex items-center gap-3 justify-center">
-            <i class="fas fa-shield-alt text-purple-600 text-xl"></i>
-            <span class="font-semibold">Trust Signal Assessment</span>
-          </div>
-        </div>
-
-        <button data-channel="whatsapp" class="contactBtn premium-btn inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 text-white rounded-2xl font-bold transition-all duration-300 text-xl shadow-2xl hover:shadow-emerald-500/25">
-          Get Free Audit <span class="text-emerald-200">($500 Value)</span>
-          <i class="fas fa-arrow-right"></i>
-        </button>
-        
-        <p class="premium-text text-gray-500 mt-4">No spam, no strings attached. Delivered within 24 hours.</p>
+    
+    <!-- Pro Fading Images with Captions -->
+    <div class="fade-images">
+      <div class="image-slide active">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid1.webp" alt="Billionaire Boys Club">
+        <div class="caption">Billionaire Boys Club</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid5.webp" alt="Gray Nicolls Cricket">
+        <div class="caption">Gray Nicolls Cricket</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid6.webp" alt="CleanCo">
+        <div class="caption">CleanCo</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid9.webp" alt="RNLI">
+        <div class="caption">RNLI</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid10.webp" alt="Sunnamusk">
+        <div class="caption">Sunnamusk</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid14.webp" alt="Case furniture">
+        <div class="caption">Case Furniture</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid2.webp" alt="Cambridge Satchel">
+        <div class="caption">Cambridge Satchel</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid4.webp" alt="Candy Kittens">
+        <div class="caption">Candy Kittens</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid7.webp" alt="Gilbert Rugby">
+        <div class="caption">Gilbert Rugby</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid8.webp" alt="Unndr">
+        <div class="caption">Unndr</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid13.webp" alt="Bio&Me">
+        <div class="caption">Bio&Me</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid11.webp" alt="Vollebak">
+        <div class="caption">Vollebak</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid3.webp" alt="111Skin">
+        <div class="caption">111Skin</div>
+      </div>
+      <div class="image-slide">
+        <img src="https://www.charleagency.com/assets/images/home/grid/grid12.webp" alt="Muc-Off">
+        <div class="caption">Muc-Off</div>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
+    
+     <!-- ========================================
+       FOOTER
+       ======================================== -->
   <footer class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-300 pt-20 pb-12 px-6">
     <!-- Glow Effect -->
     <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 via-transparent to-blue-500/10 blur-3xl"></div>
@@ -1567,28 +2718,26 @@ setInterval(showNextImage, 5000); // 5s per slide
         </ul>
       </div>
       
+      <!-- Contact & Social -->
       <div>
         <h4 class="text-white font-bold text-lg mb-6">Get In Touch</h4>
-        <div class="space-y-3 text-sm">
-          <a href="#" onclick="openLiveChat('whatsapp'); return false;" class="flex items-center gap-2 hover:text-white transition">
+        <div class="space-y-3 text-sm mb-6">
+          <a href="#" onclick="openSupportModal('whatsapp'); return false;" class="flex items-center gap-2 hover:text-white transition">
             <i class="fab fa-whatsapp"></i>
             WhatsApp Support
           </a>
-          <a href="#" onclick="openLiveChat('telegram'); return false;" class="flex items-center gap-2 hover:text-white transition">
+          <a href="#" onclick="openSupportModal('telegram'); return false;" class="flex items-center gap-2 hover:text-white transition">
             <i class="fab fa-telegram"></i>
             Telegram Chat
           </a>
-          <a href="#" onclick="openLiveChat('email'); return false;" class="flex items-center gap-2 hover:text-white transition">
+          <a href="#" onclick="openSupportModal('email'); return false;" class="flex items-center gap-2 hover:text-white transition">
             <i class="fas fa-envelope"></i>
             Email Us
           </a>
         </div>
-      </div>
-    </div>
 
-      <!-- Social Icons -->
-      <div>
-        <h3 class="text-white font-bold text-lg mb-6">Connect</h3>
+        <!-- Social Icons -->
+        <h3 class="text-white font-bold text-lg mb-4">Connect</h3>
         <div class="flex gap-4">
           <a href="#" class="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-800 hover:bg-green-500 transition-all duration-300 shadow-lg hover:shadow-green-500/25">
             <i class="fa-brands fa-facebook-f"></i>
@@ -1614,14 +2763,15 @@ setInterval(showNextImage, 5000); // 5s per slide
     </div>
   </footer>
 
-<!-- Enhanced AI Support Bot -->
+    <!-- ========================================
+     AI SUPPORT BOT
+     ======================================== -->
 <div id="aiSupportBot" class="ai-support-bot hidden">
   <!-- Bot Panel (Initially Hidden) -->
   <div id="botPanel" class="bot-panel">
     <!-- Profile Section -->
     <div class="bot-profile">
-            <img id="waStaffImg" src="https://i.pravatar.cc/80?img=12" alt="Advisor" class="w-12 h-12 rounded-full border-2 border-white">
-
+      <img id="waStaffImg" src="https://i.pravatar.cc/80?img=12" alt="Advisor" class="w-12 h-12 rounded-full border-2 border-white">
       <div class="bot-info">
         <h4>Live Support Assistant</h4>
         <p>Online • Ready to help</p>
@@ -1663,11 +2813,14 @@ setInterval(showNextImage, 5000); // 5s per slide
   </div>
   
   <!-- Main Bot Button -->
-<button id="botMainButton" class="bot-main-button">
-  <i class="fa-brands fa-whatsapp text-2xl"></i>
-</button>
+  <button id="botMainButton" class="bot-main-button">
+    <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+  </button>
+</div>
 
-<!-- Support Form Modal -->
+<!-- ========================================
+     AI SUPPORT MODAL (Enhanced)
+     ======================================== -->
 <div id="supportModal" class="support-modal">
   <div class="modal-content">
     <div class="flex justify-between items-center mb-6">
@@ -1687,21 +2840,21 @@ setInterval(showNextImage, 5000); // 5s per slide
     </div>
 
     <form id="supportForm" class="space-y-4">
-       <div>
+      <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
         <input 
-          id="name" 
+          id="supportName" 
           type="text" 
           required 
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm" 
-          placeholder="john doe"
+          placeholder="John Doe"
         />
       </div>
       
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Store URL *</label>
         <input 
-          id="storeUrl" 
+          id="supportStoreUrl" 
           type="text" 
           required 
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm" 
@@ -1712,7 +2865,7 @@ setInterval(showNextImage, 5000); // 5s per slide
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
         <input 
-          id="emailAddress" 
+          id="supportEmail" 
           type="email" 
           required 
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm" 
@@ -1723,12 +2876,12 @@ setInterval(showNextImage, 5000); // 5s per slide
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Issue Category</label>
         <select 
-          id="issueCategory" 
+          id="supportCategory" 
           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm"
         > 
           <option>Seller Permit</option>
           <option>Compliance Warning</option>
-          <option>Fraud Pervention & Set Up</option>
+          <option>Security / Fraud Alert</option>
           <option>Checkout / Payment Issue</option>
           <option>Store Visibility (SEO)</option>
           <option>Growth & Marketing</option>
@@ -1769,8 +2922,45 @@ setInterval(showNextImage, 5000); // 5s per slide
     </p>
   </div>
 </div>
+    
+    <!-- ========================================
+     SERVICE MODAL
+     ======================================== -->
+<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 relative mx-4">
+    <!-- Close Button -->
+    <button id="serviceModalClose" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">✖</button>
+    <!-- Dynamic Title -->
+    <h2 id="modalServiceTitle" class="text-xl font-semibold mb-1 text-gray-800"></h2>
+    <p id="modalServicePrice" class="text-green-700 font-medium mb-4"></p>
 
-<!-- Original Modal for backward compatibility -->
+    <!-- Form -->
+    <form id="serviceForm" class="space-y-4">
+      <input type="hidden" id="serviceName" name="service">
+      <input type="hidden" id="servicePrice" name="price">
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="serviceName_input" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="serviceEmail" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="serviceMessage" class="w-full border rounded-lg p-2 focus:ring focus:ring-green-200" rows="3"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+        Submit via WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ========================================
+     ORIGINAL MODAL (For compatibility)
+     ======================================== -->
 <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-50 backdrop-blur-sm">
   <div class="premium-card rounded-2xl shadow-2xl p-6 w-full max-w-md fade-in mx-4">
     <div class="flex justify-between items-center mb-4">
@@ -1784,12 +2974,10 @@ setInterval(showNextImage, 5000); // 5s per slide
       </p>
     </div>
 
-     <div>
-      <label class="text-xs text-gray-600 font-medium">Name *</label>
-      <input id="inputStore" class="w-full border border-gray-300 rounded-lg p-3 mb-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" placeholder="john doe"/>
-      
-
     <div>
+      <label class="text-xs text-gray-600 font-medium">Name *</label>
+      <input id="inputName" class="w-full border border-gray-300 rounded-lg p-3 mb-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" placeholder="John Doe"/>
+      
       <label class="text-xs text-gray-600 font-medium">Store URL *</label>
       <input id="inputStore" class="w-full border border-gray-300 rounded-lg p-3 mb-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" placeholder="example.myshopify.com"/>
       
@@ -1800,7 +2988,7 @@ setInterval(showNextImage, 5000); // 5s per slide
       <select id="inputIssue" class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
         <option>Seller Permit</option>
         <option>Compliance Warning</option>
-        <option>Fraud Pervention & Set Up</option>
+        <option>Security / Fraud Alert</option>
         <option>Checkout / Payment Issue</option>
         <option>Store Visibility (SEO)</option>
         <option>Growth & Marketing</option>
@@ -1820,6 +3008,9 @@ setInterval(showNextImage, 5000); // 5s per slide
   </div>
 </div>
 
+<!-- ========================================
+     TOAST NOTIFICATION
+     ======================================== -->
 <div id="toast" class="fixed right-5 bottom-24 z-50 hidden">
   <div class="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-4 py-3 rounded-lg shadow-lg flex items-center gap-2">
     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -1828,11 +3019,20 @@ setInterval(showNextImage, 5000); // 5s per slide
     Priority ticket submitted — opening secure channel...
   </div>
 </div>
-
+    
+    
+    <!-- ========================================
+     JAVASCRIPT
+     ======================================== -->
 <script>
+  // ========================================
+  // CONSTANTS & CONFIG
+  // ========================================
   const FALLBACK_PHOTO = "https://images.unsplash.com/photo-1593032457860-9e1d5bc3c7d4?q=80&w=640&auto=format&fit=crop";
 
-  // DOM Initialization
+  // ========================================
+  // INITIALIZATION
+  // ========================================
   document.addEventListener("DOMContentLoaded", () => {
     initializeLogos();
     populateDeveloperInfo();
@@ -1840,9 +3040,12 @@ setInterval(showNextImage, 5000); // 5s per slide
     runLoadingProgress();
     setupFAQs();
     initializeAIBot();
+    initializeSlideshow();
   });
 
-  // Logo Setup
+  // ========================================
+  // LOGO SETUP
+  // ========================================
   function initializeLogos() {
     const fav = document.getElementById('faviconLink');
     if (fav) fav.href = CONFIG.logoUrl;
@@ -1850,8 +3053,10 @@ setInterval(showNextImage, 5000); // 5s per slide
     const logoTop = document.getElementById('logoTop');
     if (logoTop) logoTop.src = CONFIG.logoUrl;
   }
-
-  // Developer Info
+    
+     // ========================================
+  // DEVELOPER INFO
+  // ========================================
   function populateDeveloperInfo() {
     const photoEl = document.getElementById('developerPhoto');
     if (photoEl) {
@@ -1884,7 +3089,9 @@ setInterval(showNextImage, 5000); // 5s per slide
     });
   }
 
-  // AI Bot Initialization
+  // ========================================
+  // AI BOT INITIALIZATION
+  // ========================================
   function initializeAIBot() {
     const aiBot = document.getElementById('aiSupportBot');
     const botButton = document.getElementById('botMainButton');
@@ -1898,7 +3105,8 @@ setInterval(showNextImage, 5000); // 5s per slide
       }, 1000);
 
       // Toggle panel on button click
-      botButton.addEventListener('click', () => {
+      botButton.addEventListener('click', (e) => {
+        e.stopPropagation();
         botPanel.classList.toggle('active');
       });
 
@@ -1920,7 +3128,9 @@ setInterval(showNextImage, 5000); // 5s per slide
     }
   }
 
-  // Enhanced Support Modal
+  // ========================================
+  // SUPPORT MODAL (AI Bot)
+  // ========================================
   let currentChannel = null;
 
   function openSupportModal(channel) {
@@ -1955,8 +3165,8 @@ setInterval(showNextImage, 5000); // 5s per slide
     
     // Focus on first input
     setTimeout(() => {
-      const storeInput = document.getElementById('storeUrl');
-      if (storeInput) storeInput.focus();
+      const nameInput = document.getElementById('supportName');
+      if (nameInput) nameInput.focus();
     }, 300);
   }
 
@@ -1968,7 +3178,9 @@ setInterval(showNextImage, 5000); // 5s per slide
     currentChannel = null;
   }
 
-  // Event Listeners
+  // ========================================
+  // EVENT LISTENERS
+  // ========================================
   function setupEventListeners() {
     // Original contact buttons
     document.querySelectorAll('.contactBtn').forEach(btn => {
@@ -1995,31 +3207,55 @@ setInterval(showNextImage, 5000); // 5s per slide
       modalCancelBtn.addEventListener('click', closeSupportModal);
     }
 
+    // Service modal handlers
+    const serviceForm = document.getElementById('serviceForm');
+    const serviceModalClose = document.getElementById('serviceModalClose');
+
+    if (serviceForm) {
+      serviceForm.addEventListener('submit', handleServiceSubmit);
+    }
+
+    if (serviceModalClose) {
+      serviceModalClose.addEventListener('click', closeServiceModal);
+    }
+
     // Original modal handlers
-    document.getElementById('modalClose').addEventListener('click', closeModal);
-    document.getElementById('cancelBtn').addEventListener('click', closeModal);
-    document.getElementById('sendBtn').addEventListener('click', sendQuote);
+    const modalClose = document.getElementById('modalClose');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const sendBtn = document.getElementById('sendBtn');
+
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+    if (sendBtn) sendBtn.addEventListener('click', sendQuote);
 
     // Close modals on outside click
-    document.getElementById('supportModal').addEventListener('click', (e) => {
+    document.getElementById('supportModal')?.addEventListener('click', (e) => {
       if (e.target.id === 'supportModal') {
         closeSupportModal();
       }
     });
+
+    document.getElementById('serviceModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'serviceModal') {
+        closeServiceModal();
+      }
+    });
   }
 
-  // Handle Support Form Submission
+  // ========================================
+  // SUPPORT FORM SUBMISSION (AI Bot)
+  // ========================================
   function handleSupportSubmit(e) {
     e.preventDefault();
 
-    const name = document.getElementById('name')?.value.trim() || '';
-    const storeUrl = document.getElementById('storeUrl')?.value.trim() || '';
-    const emailAddress = document.getElementById('emailAddress')?.value.trim() || '';
-    const issueCategory = document.getElementById('issueCategory')?.value || '';
+    const name = document.getElementById('supportName')?.value.trim() || '';
+    const storeUrl = document.getElementById('supportStoreUrl')?.value.trim() || '';
+    const emailAddress = document.getElementById('supportEmail')?.value.trim() || '';
+    const issueCategory = document.getElementById('supportCategory')?.value || '';
     const supportMessage = document.getElementById('supportMessage')?.value.trim() || '';
 
-    if (!storeUrl || !emailAddress) {
-      alert('Please provide Store URL and Email Address before continuing.');
+    if (!name || !storeUrl || !emailAddress) {
+      alert('Please provide Name, Store URL and Email Address before continuing.');
       return;
     }
 
@@ -2028,7 +3264,7 @@ setInterval(showNextImage, 5000); // 5s per slide
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Ticket ID: ${ticket}
 Channel: ${currentChannel?.toUpperCase()}
-Name: ${Name}
+Name: ${name}
 Store: ${storeUrl}
 Email: ${emailAddress}
 Category: ${issueCategory}
@@ -2044,8 +3280,7 @@ Advisor: Juan Manuel (Verified)
       const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encoded}`;
       window.open(url, '_blank');
     } else if (currentChannel === 'telegram') {
-      const telegramUser = CONFIG.telegramUsername.replace('t.me/', '');
-      const url = `https://t.me/${telegramUser}?text=${encoded}`;
+      const url = `https://t.me/${CONFIG.telegramUsername}?text=${encoded}`;
       window.open(url, '_blank');
     } else if (currentChannel === 'email') {
       const mailto = `mailto:${CONFIG.supportEmail}?subject=${encodeURIComponent('AI Support Bot - Priority Ticket ' + ticket)}&body=${encoded}`;
@@ -2065,7 +3300,46 @@ Advisor: Juan Manuel (Verified)
     currentChannel = null;
   }
 
-  // FAQ Setup
+  // ========================================
+  // SERVICE MODAL
+  // ========================================
+  function openServiceModal(serviceName, servicePrice) {
+    document.getElementById("modalServiceTitle").innerText = serviceName;
+    document.getElementById("modalServicePrice").innerText = servicePrice;
+    document.getElementById("serviceName").value = serviceName;
+    document.getElementById("servicePrice").value = servicePrice;
+    const modal = document.getElementById("serviceModal");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  function closeServiceModal() {
+    const modal = document.getElementById("serviceModal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+
+  function handleServiceSubmit(e) {
+    e.preventDefault();
+
+    const service = document.getElementById("serviceName").value;
+    const price = document.getElementById("servicePrice").value;
+    const name = document.getElementById("serviceName_input").value;
+    const email = document.getElementById("serviceEmail").value;
+    const message = document.getElementById("serviceMessage").value;
+
+    const whatsappMessage = `Hello, I am interested in:\n\n📌 Service: ${service}\n💲 ${price}\n\n👤 Name: ${name}\n📧 Email: ${email}\n\n📝 Message: ${message}`;
+    
+    const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(url, "_blank");
+
+    closeServiceModal();
+    showToast();
+  }
+
+  // ========================================
+  // FAQ SETUP
+  // ========================================
   function setupFAQs() {
     document.querySelectorAll('.faq-item').forEach(item => {
       item.addEventListener('click', () => {
@@ -2088,7 +3362,9 @@ Advisor: Juan Manuel (Verified)
     });
   }
 
-  // Loading Progress
+  // ========================================
+  // LOADING PROGRESS
+  // ========================================
   function runLoadingProgress() {
     const loadingMessages = [
       "Preparing your premium workspace...",
@@ -2134,7 +3410,9 @@ Advisor: Juan Manuel (Verified)
     }, 2000);
   }
 
-  // Original Modal Functions (kept for compatibility)
+  // ========================================
+  // ORIGINAL MODAL (For compatibility)
+  // ========================================
   let activeChannel = null;
 
   function openModal(channel) {
@@ -2145,7 +3423,7 @@ Advisor: Juan Manuel (Verified)
       modal.classList.add('flex');
       
       setTimeout(() => {
-        const input = document.getElementById('inputStore');
+        const input = document.getElementById('inputName');
         if (input) input.focus();
       }, 200);
     }
@@ -2160,15 +3438,15 @@ Advisor: Juan Manuel (Verified)
     activeChannel = null;
   }
 
-  // Original Ticket Submission
   function sendQuote() {
+    const name = document.getElementById('inputName')?.value.trim() || '';
     const store = document.getElementById('inputStore')?.value.trim() || '';
     const email = document.getElementById('inputEmail')?.value.trim() || '';
     const issue = document.getElementById('inputIssue')?.value || '';
     const notes = document.getElementById('inputNotes')?.value.trim() || '';
 
-    if (!store || !email) {
-      alert('Please provide Store URL/Business Name and Email before continuing.');
+    if (!name || !store || !email) {
+      alert('Please provide Name, Store URL/Business Name and Email before continuing.');
       return;
     }
 
@@ -2203,7 +3481,9 @@ Status: PRIORITY CASE - Immediate Response`;
     resetForm();
   }
 
-  // Utility Functions
+  // ========================================
+  // UTILITY FUNCTIONS
+  // ========================================
   function showToast() {
     const toast = document.getElementById('toast');
     if (toast) {
@@ -2215,7 +3495,7 @@ Status: PRIORITY CASE - Immediate Response`;
   }
 
   function resetForm() {
-    const inputs = ['inputStore', 'inputEmail', 'inputNotes'];
+    const inputs = ['inputName', 'inputStore', 'inputEmail', 'inputNotes'];
     inputs.forEach(id => {
       const el = document.getElementById(id);
       if (el) el.value = '';
@@ -2226,27 +3506,22 @@ Status: PRIORITY CASE - Immediate Response`;
     
     activeChannel = null;
   }
-  
-  function setupFAQs() {
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const content = item.querySelector('.faq-content');
-        const icon = item.querySelector('.faq-icon');
-        if (content && icon) {
-          document.querySelectorAll('.faq-content').forEach(otherContent => {
-            if (otherContent !== content) {
-              otherContent.classList.add('hidden');
-              const otherIcon = otherContent.parentElement.querySelector('.faq-icon');
-              if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
-            }
-          });
-          content.classList.toggle('hidden');
-          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
-        }
-      });
-    }); 
+
+  // ========================================
+  // SLIDESHOW
+  // ========================================
+  function initializeSlideshow() {
+    let index = 0;
+    const slides = document.querySelectorAll(".image-slide");
+
+    function showNextImage() {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }
+
+    setInterval(showNextImage, 5000); // 5s per slide
   }
-  
 </script>
 
 </body>
