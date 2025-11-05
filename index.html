@@ -900,6 +900,181 @@
           <div class="text-base font-bold text-gradient">Shopify Advisor</div>
           <div class="text-xs text-gray-500 font-medium">Helping merchants grow safely & profitably</div>
         </div>
+<!-- ✨ PREMIUM GOLD SEASONAL BANNER -->
+<div id="seasonal-banner">
+  <div class="seasonal-left">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/10379/10379747.png" 
+      alt="holiday" 
+      class="seasonal-icon"
+    />
+    <span class="seasonal-text">
+      Holiday Upgrade Package — Limited Season
+    </span>
+  </div>
+
+  <button class="seasonal-cta" id="seasonal-cta-btn">
+    View Offer →
+  </button>
+
+  <button id="seasonal-close" aria-label="Close">×</button>
+
+  <div class="snow"></div>
+</div>
+
+
+<style>
+  /* === Container === */
+  #seasonal-banner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #ffffffee;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #111;
+    padding: 14px 24px;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(180,140,30,0.25);
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    animation: fadeDown .45s ease-out;
+    cursor: pointer;
+    font-family: "Inter", "SF Pro Display", "Poppins", sans-serif;
+  }
+
+  /* === Left content === */
+  .seasonal-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* === Icon === */
+  .seasonal-icon {
+    width: 26px;
+    height: 26px;
+    filter: drop-shadow(0 0 7px rgba(220,180,60,.25));
+    animation: gentlepulse 2.4s infinite ease-in-out;
+  }
+
+  /* === Text === */
+  .seasonal-text {
+    color: #111;
+    letter-spacing: .35px;
+    font-weight: 600;
+    font-size: 16px;
+    user-select: none;
+  }
+
+  /* === CTA === */
+  .seasonal-cta {
+    margin-left: auto;
+    background: linear-gradient(90deg, #d6b354, #f1d992);
+    color: #000;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .25s ease-out;
+    font-family: inherit;
+  }
+  .seasonal-cta:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+
+  /* === Close button === */
+  #seasonal-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #555;
+    margin-left: 14px;
+  }
+  #seasonal-close:hover {
+    color: #b48c1e;
+  }
+
+  /* === Snow sparkle === */
+  .snow {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(2px 2px at 15% 30%, rgba(255,255,255,.55), transparent),
+      radial-gradient(2px 2px at 75% 15%, rgba(255,255,255,.55), transparent),
+      radial-gradient(2px 2px at 30% 70%, rgba(255,255,255,.55), transparent),
+      radial-gradient(2px 2px at 60% 80%, rgba(255,255,255,.55), transparent),
+      radial-gradient(2px 2px at 90% 50%, rgba(255,255,255,.55), transparent);
+    opacity: .65;
+    animation: snowDrift 8s linear infinite;
+  }
+
+  @keyframes snowDrift {
+    0% { background-position-y: 0px; }
+    100% { background-position-y: 80px; }
+  }
+
+  @keyframes fadeDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes gentlepulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+  }
+
+  #seasonal-banner:hover {
+    background: #fffffff6;
+  }
+</style>
+
+
+<script>
+  const banner   = document.getElementById("seasonal-banner");
+  const closeBtn = document.getElementById("seasonal-close");
+  const ctaBtn   = document.getElementById("seasonal-cta-btn");
+
+  const lastHide = localStorage.getItem("seasonal_hide_time");
+  const now = Date.now();
+  const oneDay = 24 * 60 * 60 * 1000;
+
+  if (!lastHide || (now - lastHide > oneDay)) {
+    banner.style.display = "flex";
+  }
+
+  const scrollToPackage = () => {
+    const section = document.getElementById("seasonal");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  ctaBtn.onclick = (e) => {
+    e.stopPropagation();
+    scrollToPackage();
+  };
+
+  banner.onclick = (e) => {
+    if (e.target.id !== "seasonal-close" && e.target !== ctaBtn) {
+      scrollToPackage();
+    }
+  };
+
+  closeBtn.onclick = (e) => {
+    e.stopPropagation();
+    banner.style.display = "none";
+    localStorage.setItem("seasonal_hide_time", Date.now());
+  };
+</script>
+
+        
       </div>
       <div class="hidden md:flex items-center gap-3 text-sm text-gray-600">
         <i class="fas fa-star text-yellow-400"></i>
