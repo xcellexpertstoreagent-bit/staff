@@ -1067,6 +1067,45 @@
     }
   }
 </style>
+
+
+
+<script>
+  const banner   = document.getElementById("seasonal-banner");
+  const closeBtn = document.getElementById("seasonal-close");
+  const ctaBtn   = document.getElementById("seasonal-cta-btn");
+
+  const lastHide = localStorage.getItem("seasonal_hide_time");
+  const now = Date.now();
+  const oneDay = 24 * 60 * 60 * 1000;
+
+  if (!lastHide || (now - lastHide > oneDay)) {
+    banner.style.display = "flex";
+  }
+
+  const scrollToPackage = () => {
+    const section = document.getElementById("seasonal");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  ctaBtn.onclick = (e) => {
+    e.stopPropagation();
+    scrollToPackage();
+  };
+
+  banner.onclick = (e) => {
+    if (e.target.id !== "seasonal-close" && e.target !== ctaBtn) {
+      scrollToPackage();
+    }
+  };
+
+  closeBtn.onclick = (e) => {
+    e.stopPropagation();
+    banner.style.display = "none";
+    localStorage.setItem("seasonal_hide_time", Date.now());
+  };
+</script>
+
         
       </div>
       <div class="hidden md:flex items-center gap-3 text-sm text-gray-600">
@@ -3692,6 +3731,5 @@ Status: PRIORITY CASE - Immediate Response`;
     setInterval(showNextImage, 5000); // 5s per slide
   }
 </script>
-
 </body>
 </html>
